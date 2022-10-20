@@ -160,7 +160,7 @@ export default function UserProfile() {
                 <h6 className="mb-0">Marks</h6>
               </div>
               <div className="col-sm-9 text-secondary">
-                {marks}
+              <a href={marks}>{marks}</a>
               </div>
             </div>
             <hr /></>}

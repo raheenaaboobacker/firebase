@@ -9,6 +9,7 @@ import {db} from '../../firebase'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import '../student/studentprofile.css'
+import Footer from '../../Components/Footer';
 
 export default function SingleStudent() {
   const [file, setFile] = useState("");
@@ -139,6 +140,7 @@ export default function SingleStudent() {
   return (
     <div>
       <TeacherNav/>
+      
       <div className="container">
   <div className="main-body">
     <div className="row gutters-sm">
@@ -261,7 +263,7 @@ export default function SingleStudent() {
                 <h6 className="mb-0">Marks</h6>
               </div>
               <div className="col-sm-9 text-secondary">
-                {marks}
+                <a href={marks}>{marks}</a>
               </div>
             </div>
             <hr /></>}
@@ -280,6 +282,7 @@ export default function SingleStudent() {
     </div>
   </div>
 </div>
+<Footer/>
     </div>
   )
 }

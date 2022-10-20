@@ -92,8 +92,13 @@ const handleSubmit = async (e) => {
                   <textarea className="form-control" rows="4" placeholder="Enter your address"name="address" value={data.address} onChange={handleInputChange} required></textarea>
                 </div>
                 <div className="form-group">
-                  <label htmlFor="exampleInputEmail1">Enter Department</label>
-                  <input className="form-control" id="exampleInputText" type="text"  placeholder="Enter Department" name="dept" value={data.dept} onChange={handleInputChange} required/>
+                  <label htmlFor="exampleSelect1">Choose Department</label>
+                  <select className="form-control" id="exampleSelect1" onChange={handleInputChange} name="dept">
+                  <option >Select</option>
+                    <option value={data.dept}>computer science</option>
+                    <option value={data.dept}>physics</option>
+                    <option value={data.dept}>maths</option>
+                  </select>
                 </div>
                 <div className="form-group">
                   <label htmlFor="exampleInputEmail1">Enter Phone Number</label>

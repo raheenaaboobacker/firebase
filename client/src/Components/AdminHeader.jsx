@@ -1,10 +1,16 @@
 import axios from 'axios'
 import React, { useEffect } from 'react'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import swal from 'sweetalert'
 
 export default function AdminHeader() {
-
+  const navigate=useNavigate()
+const logout=()=>{
+  localStorage.clear();
+  window.sessionStorage.clear();
+ navigate('/')
+}
   return (
     <header className="app-header"><a className="app-header__logo" href="/admindashboard"> <img width="70px" src="./assets/img/logo-alt.png" alt="logo" /></a>
      <a className="adminapp-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
@@ -56,13 +62,8 @@ export default function AdminHeader() {
           </ul>
         </li>
         
-        <li className="dropdown"><a className="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i className="fa fa-user fa-lg"></i></a>
-          <ul className="dropdown-menu settings-menu dropdown-menu-right">
-            <li><a className="dropdown-item" href="page-user.html"><i className="fa fa-cog fa-lg"></i> Settings</a></li>
-            <li><a className="dropdown-item" href="page-user.html"><i className="fa fa-user fa-lg"></i> Profile</a></li>
-            <li><a className="dropdown-item" href="page-login.html"><i className="fa fa-sign-out fa-lg"></i> Logout</a></li>
-          </ul>
-        </li>
+         <li><a style={{marginTop:"10Px"}} className="dropdown-item" onClick={logout}><i className="fa fa-sign-out fa-lg"></i> Logout</a></li>
+        
       </ul>
     </header>
   )

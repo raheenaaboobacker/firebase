@@ -10,8 +10,8 @@ export default function Footer() {
         {/* footer logo */}
         <div className="col-md-6">
           <div className="footer-logo">
-            <a className="logo" href="index.html">
-              <img src="assets/img/logo.png" alt="logo" />
+            <a className="logo" href="/">
+              <img src="./assets/img/logo-alt.png" alt="logo" />
             </a>
           </div>
         </div>
@@ -19,11 +19,11 @@ export default function Footer() {
         {/* footer nav */}
         <div className="col-md-6">
           <ul className="footer-nav">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Courses</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
         {/* /footer nav */}

@@ -3,6 +3,7 @@ import TeacherNav from '../../Components/TeacherNav'
 import CryptoJS from 'crypto-js'
 import { collection, doc, getDoc, onSnapshot, query, where } from "firebase/firestore";
 import {db} from '../../firebase'
+import Footer from '../../Components/Footer';
 
 export default function TeacherProfile() {
 
@@ -206,6 +207,7 @@ export default function TeacherProfile() {
     </div>
   </div>
 </div>
+<Footer/>
     </div>
   )
 }

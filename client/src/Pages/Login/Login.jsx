@@ -45,11 +45,12 @@ export default function Login() {
                   id: doc.id,
                   data: doc.data()
                 })))
-                console.log(data);
+                console.log(data[0].data.dept);
                 localStorage.setItem("id",data[0].id)
                 if(data[0].data.role==="student"){
                   navigate('/studentdashboard')
                 }else{
+                  localStorage.setItem("dept",data[0].data.dept)
                   navigate('/teacherdashboard')
                 }
               });

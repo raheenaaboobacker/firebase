@@ -4,6 +4,7 @@ import { collection, doc, getDoc, onSnapshot, query, where } from "firebase/fire
 import {db} from '../../firebase'
 import { useState } from 'react';
 import CryptoJS from 'crypto-js'
+import Messageshow from '../../Components/Messageshow';
 
 export default function StudentDashboard() {
 
@@ -12,9 +13,7 @@ export default function StudentDashboard() {
     
   return (
     <><StudentNav/>
-    {/* {data&&data.map(data=>{
-      <h1>data.role</h1>
-    })} */}
+    <Messageshow/>
     </>
   )
 }
