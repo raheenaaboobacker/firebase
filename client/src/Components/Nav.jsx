@@ -24,7 +24,7 @@ export default function Nav() {
           <li><a href="/">Home</a></li>
           <li><a href="#">Courses</a></li>
           <li><a href="/login">Login</a></li>
-          <li><a href="/register">Register</a></li>
+          {/* <li><a href="/register">Register</a></li> */}
           <li><a href="/#">Contact</a></li>
         </ul>
       </nav>

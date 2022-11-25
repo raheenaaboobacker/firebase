@@ -35,7 +35,7 @@ export default function Login() {
             // Signed in
             const user = userCredential.user;
             // console.log(user.uid)
-            if(user.uid=="HXSosxHDe4dLPE2IwcNifKvVitI3"){
+            if(user.uid=="Xqx2YxlAMqThP8alOumfpnuYWy02"){
               navigate("/admindashboard")
             }
             else{

@@ -16,8 +16,8 @@ export default function Home() {
      <div className="container">
        <div className="row">
          <div className="col-md-8">
-           <h1 className="white-text">Edusite Free Online Training Courses</h1>
-           <p className="lead white-text">Libris vivendo eloquentiam ex ius, nec id splendide abhorreant, eu pro alii error homero.</p>
+           <h1 className="white-text">Edusite  Courses</h1>
+           {/* <p className="lead white-text">Libris vivendo eloquentiam ex ius, nec id splendide abhorreant, eu pro alii error homero.</p> */}
            <a className="main-button icon-button" href="#">Get Started!</a>
          </div>
        </div>

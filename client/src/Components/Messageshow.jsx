@@ -32,7 +32,7 @@ export default function Messageshow() {
                     <div className="row">
 
                         <div className="col-md-6">
-                            <h2 className="white-text">Important MEssages Here.</h2>
+                            <h2 className="white-text">Important Messages Here.</h2>
                             <p className="lead white-text"> Messages</p>
                             {/* <a className="main-button icon-button" href="#">Get Started!</a> */}
                         </div>

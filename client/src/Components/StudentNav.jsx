@@ -29,9 +29,9 @@ export default function StudentNav() {
           {/* Navigation */}
           <nav id="nav">
             <ul className="main-menu nav navbar-nav navbar-right">
-              <li><a href="/">Home</a></li>
-              <li><a href="/studentViewMarks">Marks</a></li>
-              <li><a href="/register">Contact us</a></li>
+              <li><a href="/studentdashboard">Home</a></li>
+              <li><a href="/studentprofile">Marks</a></li>
+              <li><a href="#">Contact us</a></li>
               <li><a href="/studentprofile"><i className="fa fa-user fa-lg"></i></a></li>
               <li><a onClick={logout}>logout</a></li>
 
